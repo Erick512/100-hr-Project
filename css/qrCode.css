@@ -1,0 +1,15 @@
+/* Titel */
+
+.centerQr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div h1 {
+    margin: 50px;    
+}
+
+img {
+    margin: auto;
+}

@@ -1,0 +1,45 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+   clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../images/groovepaper.png');
+    color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    height: 100%;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+/* a {
+    text-decoration: none;
+} */
+a:hover {
+    text-decoration: none;
+}

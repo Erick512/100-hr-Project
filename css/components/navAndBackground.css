@@ -1,0 +1,27 @@
+/* Navigation */
+
+nav {
+    height: 100px;
+    color: white;
+    background-color: black;
+}
+
+nav > div{
+    height: 100px;
+    margin: auto 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > div:first-child {
+    padding-left: 15px;
+}
+
+nav > div > h2 {
+    font-size: 2rem;
+}
+
+nav > div h2 + i:hover{
+    color: rgb(167, 167, 167);
+}
