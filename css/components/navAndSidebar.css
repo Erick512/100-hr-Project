@@ -9,9 +9,9 @@ nav {
     z-index: 1;
 }
 
-#topBar >  h2 {
+/* #topBar >  h2 {
   color: #25a7a2;
-}
+} */
 
 #topBar {
     height: 100px;
@@ -29,9 +29,6 @@ nav {
     font-size: 2rem;
 }
 
-#topBar h2 + i:hover{
-    color: rgb(167, 167, 167);
-}
 
 /* Side bar */
 

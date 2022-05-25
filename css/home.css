@@ -1,15 +1,27 @@
 main {
     width: 100%;
+    color: white;
 }
 
-.topSection {
+main section {
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+span {
+    color:#25a7a2;
+}
+
+/* Top section */
+
+.topSection {
+    /* display: flex;
     justify-content:space-evenly; 
-    align-items: center; 
-    height: 500px;
-    color: white;
+    align-items: center;  */
+    height: 600px;
     /* background: linear-gradient(to left, white, black) ; */
-    background: linear-gradient(to right, black, #25a7a2   );
+    /* background: linear-gradient(to right, black 35%, #25a7a2); */
 
 }
 
@@ -18,7 +30,7 @@ main {
 }
 
 .topSection  button {
-    margin-top: 20px;
+    margin-top: 40px;
     width: 100px;
     height: 50px;
     color: white;
@@ -49,3 +61,132 @@ main {
         transform: translateX(0%); 
     }
 } */
+
+/* skills section */
+
+.middleSection{
+    /* background: linear-gradient(to right, black 35%, #25a7a2); */
+}
+
+/* icon circle */
+
+.middleSection ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.middleSection > ul > li {
+    font-size: 3rem;
+    display: block;
+    position: absolute;
+    color:#25a7a2;
+}
+
+.middleSection > ul .fa-car{
+    color: white;
+}
+
+.middleSection > ul {
+    animation-play-state: paused;
+}
+
+.deg0 {
+    transform: translate(150px);
+    animation: deg0 20s linear infinite;
+}
+
+.deg90 {
+    transform: rotate(-90deg) translate(150px) rotate(90deg);
+    animation: deg90 20s linear infinite;
+}
+
+.deg180{
+    transform: rotate(-180deg) translate(150px) rotate(180deg);
+    animation: deg180 20s linear infinite;
+}
+
+.deg270{
+    transform: rotate(90deg) translate(150px) rotate(-90deg);
+    animation: deg270 20s linear infinite;
+}
+
+
+@keyframes deg0 {
+    from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+@keyframes deg90 {
+    from { transform: rotate(-90deg) translateX(150px) rotate(90deg); }
+    to { transform: rotate(270deg) translateX(150px) rotate(-270deg); }
+}
+@keyframes deg180 {
+    from { transform: rotate(-180deg) translateX(150px) rotate(180deg); }
+    to   { transform: rotate(180deg) translateX(150px) rotate(-180deg); }
+}
+@keyframes deg270 {
+    from { transform: rotate(90deg) translateX(150px) rotate(-90deg); }
+    to   { transform: rotate(450deg) translateX(150px) rotate(-450deg); }
+}
+
+/* skills section right */
+
+.middleSection {
+    /* display: flex; */
+    height: 400px;
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+}
+
+.middleSection div {
+    width: 450px;
+    line-height: 50px;
+}
+
+.middleSection div h2 {
+    font-size: 2.5rem;
+}
+
+/* QR Section */
+
+.profileSection h2{
+    width: 400px;
+    line-height: 50px;
+    font-size: 2.5rem;
+}
+
+.profileSection img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+/* QR Section */
+.qrSection{
+    height: 400px;
+}
+
+.qrSection div {
+    width: 450px;
+    line-height: 50px;
+    font-size: 2.5rem;
+}
+
+/* sign up section */
+
+.signUp {
+    height: 100px;
+}
+
+.signUp button {
+    height: 50px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, black, #25a7a2);
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}

@@ -2,6 +2,10 @@
 /* LAYOUT
 /*******************************************/
 
+* {
+     color: white;
+}
+
 header{
      width: 80%;
      margin: auto;
@@ -80,6 +84,7 @@ header div > h3{
 .gigs li > i {
      padding-right: 10px;
      font-size: 1rem;
+     color: rgb(37, 167, 162);
 }
    
 
@@ -95,7 +100,6 @@ header div > h3{
      text-align: center;
      align-items: center;
      background-color: black;
-     color: white;
 }
 
 .aboutMe > h2 {
