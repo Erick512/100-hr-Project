@@ -5,8 +5,10 @@ function showSideBar() {
     
     if(document.querySelector('#sidebarMenu').classList.contains('show')){
         document.querySelector('#sidebarMenu').classList.remove('show')
+        document.querySelector('#dark').classList.remove('show')
+
     } else {
         document.querySelector('#sidebarMenu').classList.add('show')
-        // document.querySelector('body').classList.add('show')
+        document.querySelector('#dark').classList.add('show')
     }
 }

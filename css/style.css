@@ -19,17 +19,18 @@
 
 /******************************************
 /* BASE STYLES
-/*******************************************/
+/* /******************************************* */
 
 
 body {
     font-family: 'Roboto', sans-serif;
-    height: 100vh;
-    background: linear-gradient(to right , black 40%, #25a7a2);
+    height: 100%;
+    background: linear-gradient(to right bottom , black 40%, #25a7a2) no-repeat;
 }
+
 main {
-    position: absolute;
-    top: 100px;
+    position: relative;
+    color: white;
 }
 
 h2{
@@ -40,9 +41,15 @@ h1{
     font-size: 3rem;
 }
 
-/* a {
-    text-decoration: none;
-} */
-a:hover {
-    text-decoration: none;
+footer {
+    /* position: fixed; */
+    /* bottom: 0; */
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
 }
