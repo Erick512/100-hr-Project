@@ -20,7 +20,7 @@ section {
 
 /* preview */
 
-body > div + h2 {
+main > h2 {
      font-size: 2rem;
      text-align: center;
      padding: 20px;

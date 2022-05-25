@@ -16,8 +16,7 @@
         <link rel="stylesheet" href="css/style.css">
 
         <!-- componenets -->
-        <link rel="stylesheet" href="css/components/navAndBackground.css">
-        <link rel="stylesheet" href="css/components/navButton.css">
+        <link rel="stylesheet" href="css/components/navAndSidebar.css">
         <link rel="stylesheet" href="css/components/sidebarMenu.css">
 
         <!-- This file css -->
@@ -25,8 +24,10 @@
 
     </head>
     <body>
+
+        <!-- Nav and sidebar -->
         <nav>
-            <div>
+            <div id="topBar">
             <i>Logo</i>
             <h2>Friver</h2>
             <button class="menu"  aria-label="Main Menu">
@@ -37,53 +38,50 @@
                 </svg>
               </button>
             </div>
+            <div id="sidebarMenu">
+                <ul class="sidebarMenuInner">
+                    <a href="profilePreview.html"><li>Profile</li></a>
+                    <a href="qrCode.html"><li>My QR Code</li></a>
+                    <a href=""><li>Settings</li></a>
+                    <a href=""><li>Log out</li></a>
+                </ul>
+            </div>
         </nav>
 
-        <!-- side bar -->
+        <main>
+            <h2>Profile Preview</h2>
 
-        <div id="sidebarMenu">
-            <ul class="sidebarMenuInner">
-                <a href="profilePreview.html"><li>Profile</li></a>
-                <a href="qrCode.html"><li>My QR Code</li></a>
-                <a href=""><li>Settings</li></a>
-                <a href=""><li>Log out</li></a>
-            </ul>
-        </div>
+            <header>
+                <div>
+                    <img src="images/profilePic.png" alt="Profile Picture">
+                    <h3>Erick Alonso</h3>
+                </div>
+            </header>
 
-        <h2>Profile Preview</h2>
+            <section class="gigs">
+                <ul>
+                    <li><i class="fa-solid fa-square-full"></i>Lyft Driver</li>
+                    <li><i class="fa-solid fa-square-full"></i>Uber Driver</li>
+                    <li><i class="fa-solid fa-square-full"></i>Web Designer</li>
+                    <li><i class="fa-solid fa-square-full"></i>Web Devloper</li>
+                    <li><i class="fa-solid fa-square-full"></i>Tile & stone installer</li>
+                </ul>
+            </section>
 
-        <header>
-            <div>
-                <img src="images/profilePic.png" alt="Profile Picture">
-                <h3>Erick Alonso</h3>
-            </div>
-            
-            
-        </header>
+            <section class="aboutMe">
+                <h2>About Me</h2>
 
-        <section class="gigs">
-            <ul>
-                <li><i class="fa-solid fa-square-full"></i>Lyft Driver</li>
-                <li><i class="fa-solid fa-square-full"></i>Uber Driver</li>
-                <li><i class="fa-solid fa-square-full"></i>Web Designer</li>
-                <li><i class="fa-solid fa-square-full"></i>Web Devloper</li>
-                <li><i class="fa-solid fa-square-full"></i>Tile & stone installer</li>
-            </ul>
-        </section>
+                <p>I'm a software engineer that sepcializes in web devlopment. I drive for Lyft part time. On my spare time I work on freelancing and other job opportunites.</p>
+            </section>
 
-        <section class="aboutMe">
-            <h2>About Me</h2>
+            <section class="contact">
+                <h2>Contact me for my services</h2>
 
-            <p>I'm a software engineer that sepcializes in web devlopment. I drive for Lyft part time. On my spare time I work on freelancing and other job opportunites.</p>
-        </section>
-
-        <section class="contact">
-            <h2>Contact me for my services</h2>
-
-            <h3>Work email: alonoserick@icloud.com</h3>
-            <h3>Website: erickalonso.com</h3>
-        </section>
-
+                <h3>Work email: alonoserick@icloud.com</h3>
+                <h3>Website: erickalonso.com</h3>
+            </section>
+        </main>
+        <!-- scripts -->
         <script src="https://kit.fontawesome.com/d5ce7117b5.js" crossorigin="anonymous"></script>
         <script src="js/sidebarMenu.js"></script>
     </body>

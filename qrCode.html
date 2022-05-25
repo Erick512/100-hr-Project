@@ -5,14 +5,18 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hire A Driver</title>
+        
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
         <!-- Resets -->
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
 
         <!-- componenets -->
-        <link rel="stylesheet" href="css/components/navAndBackground.css">
-        <link rel="stylesheet" href="css/components/navButton.css">
+        <link rel="stylesheet" href="css/components/navAndSidebar.css">
         <link rel="stylesheet" href="css/components/sidebarMenu.css">
 
         <!-- This file css -->
@@ -20,10 +24,11 @@
 
     </head>
     <body>
-        <nav class="header">
-            <div>
+         <!-- Nav and sidebar -->
+         <nav>
+            <div id="topBar">
             <i>Logo</i>
-            <h2>Hire A Driver</h2>
+            <h2>Friver</h2>
             <button class="menu"  aria-label="Main Menu">
                 <svg width="100" height="100" viewBox="0 0 100 100">
                   <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
@@ -32,28 +37,25 @@
                 </svg>
               </button>
             </div>
+            <div id="sidebarMenu">
+                <ul class="sidebarMenuInner">
+                    <a href="profilePreview.html"><li>Profile</li></a>
+                    <a href="qrCode.html"><li>My QR Code</li></a>
+                    <a href=""><li>Settings</li></a>
+                    <a href=""><li>Log out</li></a>
+                </ul>
+            </div>
         </nav>
 
-        <!-- side bar -->
-
-        <div id="sidebarMenu">
-            <ul class="sidebarMenuInner">
-                <a href="profilePreview.html"><li>Profile</li></a>
-                <a href="qrCode.html"><li>My QR Code</li></a>
-                <a href=""><li>Settings</li></a>
-                <a href=""><li>Log out</li></a>
-            </ul>
-        </div>
-
         <!-- QR Code -->
-        <div class="centerQr">
-            <h1>My QR Code</h1>
-        </div>
-        
-        <div class="centerQr">
-            <img class='qrCode' src="" alt="">
-        </div>
+        <main>
+            <div class="centerQr">
+                <h1>My QR Code</h1>
+                <img class='qrCode' src="" alt="">
+            </div>
+        </main>
 
+        <!-- scripts -->
         <script src="https://kit.fontawesome.com/d5ce7117b5.js" crossorigin="anonymous"></script>
         <script src="js/sidebarMenu.js"></script>
         <script src="js/qrApi.js"></script>

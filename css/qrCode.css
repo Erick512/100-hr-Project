@@ -1,15 +1,20 @@
 /* Titel */
 
+
 .centerQr{
     display: flex;
+    width: 400px;
+    margin: auto;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    font-size: 4rem;
 }
 
-div h1 {
-    margin: 50px;    
+.centerQr > h1 {
+    padding: 50px 0;
 }
 
 img {
-    margin: auto;
+    display: block;
 }

@@ -1,0 +1,51 @@
+main {
+    width: 100%;
+}
+
+.topSection {
+    display: flex;
+    justify-content:space-evenly; 
+    align-items: center; 
+    height: 500px;
+    color: white;
+    /* background: linear-gradient(to left, white, black) ; */
+    background: linear-gradient(to right, black, #25a7a2   );
+
+}
+
+.topSection > div {
+    width: 400px;
+}
+
+.topSection  button {
+    margin-top: 20px;
+    width: 100px;
+    height: 50px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: .9rem;
+    font-weight: 800;
+    background: linear-gradient(to right, black, #25a7a2);
+}
+
+.topSection button:hover {
+    transform: scale(.9);
+}
+
+/* animation */
+
+/* .slide-right {
+    position: absolute;
+    animation: slide-right 3s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-right {
+    0% { 
+        transform: translateX(200%); 		
+        }
+    100% { 
+        transform: translateX(0%); 
+    }
+} */
