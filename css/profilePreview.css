@@ -19,7 +19,7 @@ section {
 }
 
 main {
-     height: 100vh;
+     height: 100%;
 }
 
 /******************************************
@@ -121,7 +121,7 @@ header div > h3{
 /* contact */
 
 .contact{
-     display:block;
+     display: block;
      height: 200px;
      width: 50%;
      margin: auto;
