@@ -16,23 +16,34 @@ span {
 /* Top section */
 
 .topSection {
+    display: flex;
+    justify-content: left;
     /* display: flex;
     justify-content:space-evenly; 
     align-items: center; */
-    height: 600px;
+    height: 400px;
     width: 100%;
+    margin-bottom: 40px;
+    padding-left: 10px;
+    /* margin-left: 10px; */
+    /* margin: auto 10px; */
     /* background: linear-gradient(to left, white, black) ; */
     /* background: linear-gradient(to right, black 35%, #25a7a2); */
 
 }
 
-/* .topSection > div {
-    width: 30%;
-} */
+.topSection > div {
+    width: 55%;
+}
+
+.topSection > div > h1 {
+    font-size: 2rem;
+    line-height: 30px;
+}
 
 .topSection  button {
     margin-top: 40px;
-    width: 100px;
+    width: 150px;
     height: 50px;
     color: white;
     border: none;
@@ -40,6 +51,14 @@ span {
     font-size: .9rem;
     font-weight: 800;
     background: linear-gradient(to right, black, #25a7a2);
+}
+
+.topSection img {
+    display: block;
+    position: relative;
+    bottom: 20px;
+    left: 0;
+    width: 60%;
 }
 
 .topSection button:hover {
@@ -65,23 +84,25 @@ span {
 
 /* skills section */
 
-.middleSection{
-    /* background: linear-gradient(to right, black 35%, #25a7a2); */
-}
-
 /* icon circle */
+
+.middleSection {
+    display: block;
+    /* margin: 50px auto; */
+}
 
 .middleSection ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
+    margin: auto;
 }
 
 .middleSection  li {
-    font-size: 3rem;
+    font-size: 2.5rem;
     display: block;
     position: absolute;
     color:#25a7a2;
@@ -96,41 +117,41 @@ span {
 }
 
 .deg0 {
-    transform: translate(150px);
+    transform: translate(80px);
     animation: deg0 20s linear infinite;
 }
 
 .deg90 {
-    transform: rotate(-90deg) translate(150px) rotate(90deg);
+    transform: rotate(-90deg) translate(80px) rotate(90deg);
     animation: deg90 20s linear infinite;
 }
 
 .deg180{
-    transform: rotate(-180deg) translate(150px) rotate(180deg);
+    transform: rotate(-180deg) translate(80px) rotate(180deg);
     animation: deg180 20s linear infinite;
 }
 
 .deg270{
-    transform: rotate(90deg) translate(150px) rotate(-90deg);
+    transform: rotate(90deg) translate(80px) rotate(-90deg);
     animation: deg270 20s linear infinite;
 }
 
 
 @keyframes deg0 {
-    from { transform: rotate(0deg) translateX(150px) rotate(0deg); }
-    to   { transform: rotate(360deg) translateX(150px) rotate(-360deg); }
+    from { transform: rotate(0deg) translateX(80px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(80px) rotate(-360deg); }
 }
 @keyframes deg90 {
-    from { transform: rotate(-90deg) translateX(150px) rotate(90deg); }
-    to { transform: rotate(270deg) translateX(150px) rotate(-270deg); }
+    from { transform: rotate(-90deg) translateX(80px) rotate(90deg); }
+    to { transform: rotate(270deg) translateX(80px) rotate(-270deg); }
 }
 @keyframes deg180 {
-    from { transform: rotate(-180deg) translateX(150px) rotate(180deg); }
-    to   { transform: rotate(180deg) translateX(150px) rotate(-180deg); }
+    from { transform: rotate(-180deg) translateX(80px) rotate(180deg); }
+    to   { transform: rotate(180deg) translateX(80px) rotate(-180deg); }
 }
 @keyframes deg270 {
-    from { transform: rotate(90deg) translateX(150px) rotate(-90deg); }
-    to   { transform: rotate(450deg) translateX(150px) rotate(-450deg); }
+    from { transform: rotate(90deg) translateX(80px) rotate(-90deg); }
+    to   { transform: rotate(450deg) translateX(80px) rotate(-450deg); }
 }
 
 /* skills section right */
@@ -143,36 +164,73 @@ span {
 }
 
 .middleSection div {
-    width: 450px;
-    line-height: 50px;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    line-height: 40px;
+    /* margin: auto 10px; */
 }
 
 .middleSection h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
-/* QR Section */
+/* Divider */
+
+.divider{
+    margin: auto;
+    width: 90%;
+    border: 2px solid rgba(0, 128, 128, 0.335);
+    border-radius: 20px;
+    margin: 75px auto;
+}
+
+/* profile Section */
+
+.profileSection {
+    display: block;
+}
+
+.profileSection div {
+    width: 85%;
+    margin: auto;
+}
 
 .profileSection h2{
-    width: 400px;
-    line-height: 50px;
-    font-size: 2.5rem;
+    width: 100%;
+    line-height: 40px;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .profileSection img {
-    width: 300px;
+    display: block;
+    margin: 40px auto;
+    width: 200px;
     border-radius: 20px;
 }
 
 /* QR Section */
 .qrSection{
     height: 400px;
+    display: block;
+}
+
+.qrSection > img {
+    display: block;
+    width: 150px;
+    margin: 40px auto;
 }
 
 .qrSection div {
-    width: 450px;
-    line-height: 50px;
-    font-size: 2.5rem;
+    width: 85%;
+    margin: auto;
+}
+
+.qrSection div h2 {
+    font-size: 1.5rem;
+    line-height: 40px;
+    text-align: center;
 }
 
 /* sign up section */
